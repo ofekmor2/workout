@@ -8,9 +8,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Workout">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAACr0lEQVR42u3dMU7rUBCG0dkBoqBlBRT0aamyj+yBkv1kT2wl6BauiBTbQZeZySm+BiEkfp/nZ8kRN56eXy5Sl8IIAloCWgJaAlpAS0BLQEtAS0ALaAloCWgJaAloAS0BLQEtAS0BLaAloCWgJaAloAW0BLQEtAS0BLSAloCWgJaAloAW0BLQEtAS0ALaEAJaAloCWgJaQEtAS0BLQEtAC2gJaAloCWgJaAEtAS0BfbvXj/fL2+fxV+PrLqKty4AeIx6/v242BofxvsaGa7bODjst6MP5tGrgpfH9YNo6Kt+ZoZ6POfudOiXoPQNX+S+xw41jCegJI3ue/vvn5ko3j+g2MtCPvTXQQANtZKCBBhpooIG2NdCwAm1koIHeNeC1gO4Bes31bQF6zcuS5RcHuh7oNT9n1kuYyPTmb/kXDXQd0Ft+xgzUke1zGUDXAp3t8x+ReTCgc4POeH2ABhpooIEGGmiggQba9QEaVqANBjTQQAMNNNBAAw206wO0gG4wmHIHtIAGWkADLaCBFtACGmgBDbSABlpAAy2gvfr26htooF0foAW0wYAGGmiggQYaaKCBdn2AFtAGAxpooIEGGmig/cFzoP3Bc0dSyJEUDg0C2qFBjnVzrFvTY90cvOngTaCBtjXQQANtZKCBNjLQQANta6CBtnVp0FveLAL9v6BnvSwpDXrP5z+yj5y1e28eGX+n6DT04XwCdWNjs043jugyNMy2Tg16y53ac/O85+nsj3RR5Vnv2odePC/buiRoCWgBLQEtAS0BLQEtoCWgJaAloCWgBbQEtAS0BLQEtICWgJaAloCWgBbQEtAS0BLQEtACWgJaAloCWkAbQUBLQEtAS0ALaAloCWgJaAloAS0BLQEtAS0BLaAloCWgJaAloAW0BLQEtAS0BLSAlqr0A+RtawwuAJFSAAAAAElFTkSuQmCC">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAADxklEQVR42u3dMXITQRRF0d4BRUDKCgjISYm8D/ZAyH7YE1uBUjBVBFJJGvV4/u93gpvjnndatpkqjw8fP41i/dXSldqbsSsahdErGoPRKxqD4SsaguErGoLxKxqB4SsagvErGoHxKxqB4SsagvErGoHxKxqB8SsagfErGgEAAsD4lYrA+BWNwPgVjQAAAWD8SkVg/IpGAIAAMH6lIgBAABi/UhEAIAAAEAAORYEIABAAACgdgANRJAIABICDEAASAFIeAAeh2AAQABIAEgASABIAEgASABIAEgASABIAEgASABIAEgASABIAEgASABIAu/vy8+1qn79/9fCKdXkmt54XAE8e5NufXw/17fcP4zu5yzN49HlVvLhG18OsfrAJN/6eZ1Xt0hrdxw9Bn/FXRDBWOFDfDvW6rCpdWGOVA/Up0OeyqnRhlQAw40AvVf+NwwpdznjW8wJg8oFWOdSVm/msKlxYAAgAAAQAAAIAAAEAgAAAQAAAIAAAEADTBn35L/D/v3AAANh2cO+VmCPAjLPe6dneBQEAgD27KQdgzwtt26cBALkA9u6mFIBX3hCc9SYoAP0AvPLsZ735Oyr+IAtABoAKP0ADIAAAEAAACAAABAAAAgAAAQCAAABAAAAgAAAQAAAAAAAAAABQEoAyAkAAACAAABAAAAgAAAQAAAIAAAEAgAAAQAAAIAAAEABehpOX4QAQAAAIAAAEAAACAAABAIAAAEAAACAAABAAAAgAAAQAAALAn0kFwJ9J9YeyAfCHsl9EsH0RAGQD2LubkgAeGfR26x/184OR9gOw7eAehFnf9x8K4OwfoI20J4CzAkAAACAAABAAAAgAAAQAAAIAAAEAgABocagVDnT1Zl5YFb6eEgBmvRE66w1BHfPm75Hv9LQGMONQqxxoQjMurCqX1VjlUN3+fS6sSpfVWOFmMf4+CKp9Uo/OB+vbnl6XVsWLalT/jcO13Pg1PxFuPa/K/+7h4Sk5AASABIAEgASABIAEgASABIAEgASABIAEgASABIAEgASABIAEgASAVB8ABEptACAAHIQAkACQMgFAoLjxAyAAABAAEChw/AAIAAAEAAQKHD8AAuAKAAgUMX4ABMANABBo+fHfAwCBlh4/AALgDgAItOz4HwUAgZYc/zMAINBy4wdAADwBAAItNf49ACDQMuPfCwACLTH+VwBAoPbjfxUACGo7/JkAIFDL8c8EAIHajX82ABDUZvhHAoBALcZ/JAAQVHr47wUABJUc/nsDgEFlRn82ABh06ugrAYDC2E/tH8mQPzwU9Q16AAAAAElFTkSuQmCC">
 <title>Workout Tracker</title>
 <style>
 :root{--bg:#0f1115;--card:#181b22;--card2:#1f232c;--line:#2a2f3a;--text:#e8eaf0;--mute:#8b93a3;--accent:#4ade80;--accent-ink:#06210f;--orange:#fb923c;--danger:#f87171;--blue:#60a5fa}
@@ -96,13 +95,23 @@ details.h summary::-webkit-details-marker{display:none}
 </style>
 </head>
 <body>
-<div id="app"></div>
+<div id="app"><p style="padding:24px;color:#8b93a3;font-family:sans-serif">Loading… (build v3)</p></div>
 <div id="timerbar"></div>
 <div id="sheetbg"><div id="sheet"></div></div>
 <div id="toast"></div>
 <input type="file" id="importfile" accept="application/json,.json" hidden>
 <script>
+window.addEventListener('error',function(e){var d=document.getElementById('app');if(d&&d.textContent.indexOf('Loading')===0){d.innerHTML='<pre style="color:#f87171;white-space:pre-wrap;padding:20px;font-size:14px">App error:\n'+String(e.message)+'\n(line '+e.lineno+')</pre>'}});
+</script>
+<script>
+(function(){
 'use strict';
+/* inline web-app manifest (single-file build) */
+try{
+ var mf={name:'Workout Tracker',short_name:'Workout',start_url:location.href.split('#')[0],scope:location.href.split('#')[0].replace(/[^\/]*$/,''),display:'standalone',orientation:'portrait',background_color:'#0f1115',theme_color:'#0f1115',icons:[{src:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAADxklEQVR42u3dMXITQRRF0d4BRUDKCgjISYm8D/ZAyH7YE1uBUjBVBFJJGvV4/u93gpvjnndatpkqjw8fP41i/dXSldqbsSsahdErGoPRKxqD4SsaguErGoLxKxqB4SsagvErGoHxKxqB4SsagvErGoHxKxqB8SsagfErGgEAAsD4lYrA+BWNwPgVjQAAAWD8SkVg/IpGAIAAMH6lIgBAABi/UhEAIAAAEAAORYEIABAAACgdgANRJAIABICDEAASAFIeAAeh2AAQABIAEgASABIAEgASABIAEgASABIAEgASABIAEgASABIAEgASABIAu/vy8+1qn79/9fCKdXkmt54XAE8e5NufXw/17fcP4zu5yzN49HlVvLhG18OsfrAJN/6eZ1Xt0hrdxw9Bn/FXRDBWOFDfDvW6rCpdWGOVA/Up0OeyqnRhlQAw40AvVf+NwwpdznjW8wJg8oFWOdSVm/msKlxYAAgAAAQAAAIAAAEAgAAAQAAAIAAAEADTBn35L/D/v3AAANh2cO+VmCPAjLPe6dneBQEAgD27KQdgzwtt26cBALkA9u6mFIBX3hCc9SYoAP0AvPLsZ735Oyr+IAtABoAKP0ADIAAAEAAACAAABAAAAgAAAQCAAABAAAAgAAAQAAAAAAAAAABQEoAyAkAAACAAABAAAAgAAAQAAAIAAAEAgAAAQAAAIAAAEABehpOX4QAQAAAIAAAEAAACAAABAIAAAEAAACAAABAAAAgAAAQAAALAn0kFwJ9J9YeyAfCHsl9EsH0RAGQD2LubkgAeGfR26x/184OR9gOw7eAehFnf9x8K4OwfoI20J4CzAkAAACAAABAAAAgAAAQAAAIAAAEAgABocagVDnT1Zl5YFb6eEgBmvRE66w1BHfPm75Hv9LQGMONQqxxoQjMurCqX1VjlUN3+fS6sSpfVWOFmMf4+CKp9Uo/OB+vbnl6XVsWLalT/jcO13Pg1PxFuPa/K/+7h4Sk5AASABIAEgASABIAEgASABIAEgASABIAEgASABIAEgASABIAEgASAVB8ABEptACAAHIQAkACQMgFAoLjxAyAAABAAEChw/AAIAAAEAAQKHD8AAuAKAAgUMX4ABMANABBo+fHfAwCBlh4/AALgDgAItOz4HwUAgZYc/zMAINBy4wdAADwBAAItNf49ACDQMuPfCwACLTH+VwBAoPbjfxUACGo7/JkAIFDL8c8EAIHajX82ABDUZvhHAoBALcZ/JAAQVHr47wUABJUc/nsDgEFlRn82ABh06ugrAYDC2E/tH8mQPzwU9Q16AAAAAElFTkSuQmCC',sizes:'192x192',type:'image/png'},{src:'data:image/png;base64,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',sizes:'512x512',type:'image/png'}]};
+ var ml=document.createElement('link');ml.rel='manifest';ml.href=URL.createObjectURL(new Blob([JSON.stringify(mf)],{type:'application/manifest+json'}));document.head.appendChild(ml);
+}catch(e){}
+
 /* ---------- helpers ---------- */
 const KEY='wt_state_v1';
 const $=s=>document.querySelector(s);
@@ -148,7 +157,7 @@ function setApply(){const t=S.settings.theme==='light'?'light':'dark';document.d
 
 /* ---------- exercise history ---------- */
 function hist(name){return S.sessions.flatMap(s=>s.exercises.filter(e=>e.name===name&&e.sets.length).map(e=>({date:s.date,t:s.startedAt,type:e.type,sets:e.sets}))).sort((a,b)=>a.t-b.t)}
-function top(h){return Math.max(...h.sets.map(x=>x.reps))}
+function topReps(h){return Math.max(...h.sets.map(x=>x.reps))}
 function fmtSets(sets,type){const r=sets.map(s=>s.reps).join(' · ')+(type==='time'?' s':'');const w=Math.max(0,...sets.map(s=>s.weight||0));return r+(w>0?' (+'+fmtN(w)+' kg)':'')}
 function allNames(){const n=new Set();Object.values(S.workouts).forEach(w=>w.ex.forEach(e=>n.add(e.name)));S.sessions.forEach(s=>s.exercises.forEach(e=>n.add(e.name)));return [...n]}
 function prOf(name){const h=hist(name);if(!h.length)return null;return{reps:Math.max(...h.flatMap(x=>x.sets.map(s=>s.reps))),w:Math.max(0,...h.flatMap(x=>x.sets.map(s=>s.weight||0))),type:h[0].type}}
@@ -296,7 +305,7 @@ function progressView(){
  ['Pull-ups','Dips','Push-ups'].forEach(n=>{
   const hh=hist(n),pr=prOf(n);
   let d='';
-  if(hh.length>1){const df=top(hh[hh.length-1])-top(hh[0]);d=`<span class="${df>0?'up':df<0?'dn':''}">${df>0?'▲ +':df<0?'▼ ':'= '}${df||''}</span>`}
+  if(hh.length>1){const df=topReps(hh[hh.length-1])-topReps(hh[0]);d=`<span class="${df>0?'up':df<0?'dn':''}">${df>0?'▲ +':df<0?'▼ ':'= '}${df||''}</span>`}
   h+=`<div class="tile" data-act="exsel" data-n="${esc(n)}" style="cursor:pointer;${ui.ex===n?'border-color:var(--accent)':''}"><b>${pr?pr.reps:'–'}</b><span>${esc(n)} PR<br>${d||'&nbsp;'}</span></div>`;
  });
  h+='</div>';
@@ -305,7 +314,7 @@ function progressView(){
  if(!names.includes(ui.ex))ui.ex=names[0];
  const hh=hist(ui.ex),pr=prOf(ui.ex);
  h+=`<div class="card"><select data-sel="ex">${names.map(n=>`<option ${n===ui.ex?'selected':''}>${esc(n)}</option>`).join('')}</select><div style="margin-top:10px">`;
- h+=lineChart(hh.slice(-20).map(x=>({x:short(x.date),y:top(x)})));
+ h+=lineChart(hh.slice(-20).map(x=>({x:short(x.date),y:topReps(x)})));
  h+='</div>';
  if(pr)h+=`<div class="sub" style="margin-top:6px">Top set per session · PR: <b style="color:var(--text)">${pr.reps}${pr.type==='time'?' sec':' reps'}</b>${pr.w>0?` · max added weight <b style="color:var(--text)">+${fmtN(pr.w)} kg</b>`:''}</div>`;
  else h+='<div class="empty">Log a workout to see your progress.</div>';
@@ -544,7 +553,7 @@ async function exportData(){
 /* ---------- boot ---------- */
 if(S.active)ui.view=null;
 render();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
+})();
 </script>
 </body>
 </html>
